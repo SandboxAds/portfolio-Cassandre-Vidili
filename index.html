@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cassandre Vidili — Performance Marketing Portfolio</title>
+<meta name="author" content="Cassandre Vidili – Sandbox Ads">
+<meta name="copyright" content="© 2026 Cassandre Vidili – Sandbox Ads. All rights reserved.">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -214,6 +216,9 @@ body {
   max-width: 1100px;
 }
 
+.contact-note .copyright { display:block; color: rgba(255,255,255,0.88); margin-bottom: 4px; }
+.page-footer .copyright { font-weight: 600; color: var(--gray-700, #374151); }
+.page-footer .powered { margin-top: 4px; font-size: 11px; }
 .page-footer {
   margin-top: 28px;
   padding-top: 18px;
@@ -1454,7 +1459,7 @@ body {
     </div>
   </nav>
   <div class="sidebar-contact">
-    <div class="contact-note">Powered with Codex &amp; Claude Code</div>
+    <div class="contact-note"><span class="copyright">© 2026 Cassandre Vidili<br>Sandbox Ads · All rights reserved.</span>Powered with Codex &amp; Claude Code</div>
   </div>
 </aside>
 
@@ -2715,7 +2720,7 @@ document.querySelectorAll('.page-content').forEach((pageContent) => {
   if (pageContent.querySelector('.page-footer')) return;
   const footer = document.createElement('div');
   footer.className = 'page-footer';
-  footer.textContent = 'Powered with Codex & Claude Code';
+  footer.innerHTML = '<div class="copyright">© 2026 Cassandre Vidili – Sandbox Ads. All rights reserved.</div><div class="powered">Powered with Codex &amp; Claude Code</div>';
   pageContent.appendChild(footer);
 });
 
