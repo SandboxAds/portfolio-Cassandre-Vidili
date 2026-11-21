@@ -3377,7 +3377,7 @@ function sendQuote(e) {
       '<div class="t-res"><section style="display:flex;flex-direction:column;gap:12px"><div class="t-eyebrow">Your selection</div><h1>'+n+' cases picked for you'+(name?', '+esc(name):'')+'</h1>'+
       '<div class="t-based"><span style="font-size:13px;color:#475569">Based on:</span>'+based.map(function(b){return '<span class="t-chip">'+esc(b)+'</span>';}).join('')+'<button type="button" class="t-link" style="min-height:32px" data-go="q0">Change</button></div></section>'+note+
       '<section class="t-prof"><img src="'+photo()+'" alt="Portrait of Cassandre Vidili"><div><b style="font-size:16px">Cassandre Vidili · Senior Performance Marketing Manager</b><div style="font-size:14px;color:#475569;margin-top:4px">10+ years in paid media · €10M+ ad spend managed per year · 200+ B2B &amp; B2C brands · French, English, Spanish</div></div>'+
-      '<button type="button" class="t-link" data-page="experience">Experience &amp; skills</button></section>'+
+      '</section>'+
       r.main.concat(r.extra).map(caseCard).join('')+
       more()+
       '<section style="display:flex;flex-direction:column;gap:16px"><div class="t-eyebrow">What you get, whatever the channel</div><div class="t-blocks">'+blocks()+tools()+'</div></section>'+
